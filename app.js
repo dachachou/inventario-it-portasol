@@ -120,7 +120,10 @@ app.use(cors());
 app.use(express.json()); // <- necesario para que req.body funcione
 
 
-
+// Ruta raíz para confirmar que el backend está vivo
+app.get('/', (req, res) => {
+  res.send('✅ Backend Inventario-IT funcionando en Render');
+});
 
 
 
